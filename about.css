@@ -1,0 +1,462 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    list-style: none;
+}
+#active {
+    color: #d75e02;
+}
+body {
+    width: 100%;
+}
+header {
+    display: flex;
+    flex-direction: r;
+    justify-content: space-between;
+    background: #404040;
+    align-items: center;
+    padding: 0 150px;
+    color: white;
+    height: 80px;
+    width: 100%;
+    position: fixed;
+    z-index: 11;
+    top: 0;
+}
+.images {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+#uba{
+    width: 40%;
+}
+
+.nav-info{
+    display: flex;
+    align-items: center;
+}
+.nav-info .nav-bar{
+    display: flex;
+}
+.nav-info .nav-bar li{
+    list-style: none;
+}
+.nav-info .nav-bar li a{
+    text-decoration: none;
+    color: white;
+    margin-right: 30px;
+}
+button {
+    background: yellow;
+    color: black;
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    position: absolute;
+}
+.hamburger span {
+    background-color: white;
+    height: 3px;
+    width: 25px;
+    margin: 3px;
+}
+
+
+
+/* <===================BODY=================> */
+
+
+.body-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    margin: 100px 0;
+}
+.body-container h1{
+    padding: 20px 0;
+    font-weight: bolder;
+    font-size: 50px;
+}
+.body-info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+.body-info p{
+    margin-left: 30px;
+    font-weight: bold;
+    font-size: larger;
+    text-align: left;
+}
+
+/* <=======================IMAGES===================> */
+
+.image-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 0;
+}
+.image-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+}
+
+.image-container h1{
+    padding: 5px;
+}
+
+ /* <===================ACTIVITY===============> */
+
+ .activities-container {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 30px 0;
+    width: 100%;
+ }
+ .activity {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    /* width: 100%; */
+ }
+ .activity-body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    }
+    .activity-body h1{
+        padding-bottom: 10px;
+    }
+ .activity-1 {
+    padding: 10px;
+    background: #ededee;
+    border-radius: 20px;
+    margin: 10px;
+    width: 100%;
+ }
+ .activity-1 small{
+    padding: 0 20px;
+    color: #FF9900;
+}
+.activity-1 h3 {
+    padding: 10px 0;
+}
+ .activity-1 div span {
+    position: absolute;
+    height: 15px;
+    width: 15px;
+    background: #FF9900;
+    border-radius: 50%; 
+    padding-top: 10px;
+ }
+
+
+ /* .swiper-slide {
+    width: 100%;
+    height: 100%;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  } */
+
+
+/* <=====================EVENT TIMMING===================>*/
+
+.event-time-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px;
+}
+.event-time-container h3{
+    padding: 25px 0;
+}
+.event-timing {
+    font-weight: bolder;
+    font-size: 3rem;
+    word-spacing: 30px;
+}
+.event-timing span {
+    color: #FF9900;
+}
+.event-body {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    gap: 40px;
+}
+.event-title {
+    padding: 25px 20px;
+    background: #ededed;
+    height: 140px;
+    border-radius: 15px;
+}
+.event-title h3{
+    padding: 10px 0;
+    text-align: center;
+}
+.date {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    background: #ededed;
+    padding: 45px 30px;
+    height: 140px;
+    border-radius: 15px;
+    width: 15rem;
+}
+.date h1 {
+    color: #FF9900;
+    font-weight: bolder;
+    font-size: 3rem;
+}
+.date small {
+    font-size: 30px;
+}
+.empty {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+.empty p {
+    height: 100px;
+    width: 200px;
+    background: #d9d9d9;
+}
+.empty button {
+    color: white;
+    background: black;
+    border: none;
+    width: 250px;
+}
+
+/* <====================SPONSOR====================> */
+
+.sponsor-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.sponsor-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.sponsor-body {
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    margin: 0 200px;
+    gap: 100px;
+
+}
+.sponsor-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    background: #EDEDED;
+    padding: 50px;
+    border-radius: 15px;
+}
+.sponsor-info button{
+    width: 100%;
+    color: white;
+    background: black;
+}
+
+/* <=======================FOOTER===================> */
+
+
+ footer{
+        background: #d9d9d9;
+        color: black;
+    }
+       .footer-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 105px 200px;
+       }
+       .footer-info-img{
+        display: flex;
+        align-items: center;
+       }
+       .footer-links a, .footer-social a{
+        color: #232F3E;
+        margin-bottom: 10px;
+       }
+       .footer-links ul li, .footer-social ul li{
+        margin-bottom: 10px;
+       }
+       .footer-links , .footer-social {
+       text-align: center;
+       }
+       .footer-links h4 , .footer-social h4{
+        margin-bottom: 10px;
+       }
+
+       .footer-login p{
+        margin-bottom: 10px;
+        font-size: large;
+       }
+       input,  #btn{
+        border-radius: 50px;
+        padding: 10px;
+        width: 100%; 
+        color: white;
+        border-color: black;
+       }
+       #btn {
+        background: #232F3E;
+        margin-top: 10px;
+       }
+
+    .copy {
+        background: #232F3E;
+        color: white;
+        text-align: center;
+        height: 20pxpx;
+        position: relative;
+        margin-bottom: 10px;
+       }
+
+
+
+
+
+       @media(max-width: 768px) {
+        body {
+             width:100%;
+        }
+
+        /* ====================HEADER================= */
+
+        header {
+            padding: 0;
+        }
+        .nav-info {
+            display: none;
+            flex-direction: column;
+            gap: 20px;
+            width: 100%;
+            position: absolute;
+            top: 80px;
+            background-color: #232F3E;
+            padding: 10px;
+        }
+        .nav-info .nav-bar {
+            flex-direction: column;
+            gap: 20px;
+            justify-content: center;
+            align-items: center;
+            padding: 10px;
+        }
+        .hamburger {
+            display: flex;
+            right: 10px;
+        }
+        .hamburger:hover {
+            background: #404040;
+        }
+        .nav-info.display{
+            display: flex;
+        }
+        .hamburger.not span{
+            display: none;
+        } 
+    
+        .hamburger.not::after {
+            content: "X";
+            font-size: 25px;
+            text-align: center;
+            margin: 5px;
+            color: white;
+        }
+
+        /* ===================BODY======================== */
+
+        .body-info {
+            flex-direction: column;
+            width: 350px;
+        }
+        .body-info p {
+            margin: 0;
+            padding: 10px;
+        }
+        .body-info img {
+            width: 350px;
+        }
+
+        .image .images-1 {
+            width: fit-content;
+            margin: 0 10px;
+        }
+
+
+
+
+
+        .sponsor-body {
+            flex-direction: column;
+            margin: 20px;
+        }
+        .sponsor-body img {
+            width: 350px;
+        }
+        .sponsor-info {
+            padding: 30px;
+            width: 350px;
+            margin-top: 0;
+        }
+
+
+
+
+        .footer-container {
+            flex-direction: column;
+        }
+    }
